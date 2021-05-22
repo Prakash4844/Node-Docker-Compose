@@ -33,6 +33,7 @@ Step 5: create `user-account` _db_ and `users` _collection_ in mongo-express
 
 Step 6: Start your nodejs application locally - go to `app` directory of project 
 
+    cd app
     npm install 
     node server.js
     
@@ -56,6 +57,7 @@ Step 3: in mongo-express UI - create a new collection "users" in the database "m
     
 Step 4: start node server 
 
+    cd app
     npm install
     node server.js
     
