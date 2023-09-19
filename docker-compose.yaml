@@ -1,11 +1,11 @@
 version: '3'
 services:
-  # my-app:
-    # image: ${docker-registry}/my-app:1.0
-    # ports:
-     # - 3000:3000
+  my-app:
+    image: node-app:1.0
+    ports:
+     - 3000:3000
   mongodb:
-    image: mongo
+    image: mongo:4.4.24
     ports:
      - 27017:27017
     environment:
@@ -17,7 +17,7 @@ services:
     image: mongo-express
     restart: always
     ports:
-     - 8080:8081
+     - 8081:8081
     environment:
      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
